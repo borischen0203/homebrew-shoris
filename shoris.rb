@@ -5,28 +5,28 @@
 class Shoris < Formula
   desc ""
   homepage "https://github.com/scraly/homebrew-shoris"
-  version "0.0.5"
+  version "0.0.6"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/borischen0203/shoris/releases/download/v0.0.5/shoris_0.0.5_Darwin_x86_64.tar.gz"
-      sha256 "112ba8476172da133b3b1bd6c49d48079c2aeaef4ee3366ca8e977df7a1fccd2"
+      url "https://github.com/borischen0203/shoris/releases/download/v0.0.6/shoris_0.0.6_Darwin_x86_64.tar.gz"
+      sha256 "f608f70a1030d2662d43993ff4881cb38f6ae83403c156bf1bda6cec93734b4a"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/borischen0203/shoris/releases/download/v0.0.5/shoris_0.0.5_Darwin_arm64.tar.gz"
-      sha256 "ff7e094d8780c0c34d8af6a59e697d53c1a95b8502dd03f8e2850bd0117afe4c"
+      url "https://github.com/borischen0203/shoris/releases/download/v0.0.6/shoris_0.0.6_Darwin_arm64.tar.gz"
+      sha256 "1802b7a4cecd05c9de858f00cc15c318afbeeec05b8828a1fbd1d1e2a67612c7"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/borischen0203/shoris/releases/download/v0.0.5/shoris_0.0.5_Linux_x86_64.tar.gz"
-      sha256 "c44c3eec072607e687123139eb6a2c7b36da89076f51551210db30502f3d1e7d"
+      url "https://github.com/borischen0203/shoris/releases/download/v0.0.6/shoris_0.0.6_Linux_x86_64.tar.gz"
+      sha256 "d402944a56ada6b8f088ed238aecec54c2b10108485d6a00ec67a6078236fa75"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/borischen0203/shoris/releases/download/v0.0.5/shoris_0.0.5_Linux_arm64.tar.gz"
-      sha256 "3f0a9751a7a7108efc594bde1ea333b0d014613c83b5f268f409fc8ea8971c9b"
+      url "https://github.com/borischen0203/shoris/releases/download/v0.0.6/shoris_0.0.6_Linux_arm64.tar.gz"
+      sha256 "bd42a2d6b54b9e931d30e74271dfe6dc4166cf73ff995f5e8e83322bbb00fcf3"
     end
   end
 
