@@ -5,20 +5,20 @@
 class Shoris < Formula
   desc ""
   homepage "https://github.com/borischen0203/homebrew-shoris"
-  version "0.1.6"
+  version "0.1.7"
 
   on_macos do
-    if Hardware::CPU.arm?
-      url "https://github.com/borischen0203/shoris/releases/download/v0.1.6/shoris_0.1.6_Darwin_arm64.tar.gz"
-      sha256 "f0c00b3cd3dafca49c64724b627f056cdf7cced64cb8cc5f387cc1823fbcbbc8"
+    if Hardware::CPU.intel?
+      url "https://github.com/borischen0203/shoris/releases/download/v0.1.7/shoris_0.1.7_Darwin_x86_64.tar.gz"
+      sha256 "f3ef1432208173ebc8e79427469b02412a9557fb930d79954e0f7bed4d2692ae"
 
       def install
         bin.install "shoris"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/borischen0203/shoris/releases/download/v0.1.6/shoris_0.1.6_Darwin_x86_64.tar.gz"
-      sha256 "346472fc369428b5fa40e76efc16e795049138640c665c7d73c01ff0c2d96e54"
+    if Hardware::CPU.arm?
+      url "https://github.com/borischen0203/shoris/releases/download/v0.1.7/shoris_0.1.7_Darwin_arm64.tar.gz"
+      sha256 "2a0475113173fc07bc2f06b00addace43523321b3571ea1892ed2fb6d1f0df93"
 
       def install
         bin.install "shoris"
@@ -28,16 +28,16 @@ class Shoris < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/borischen0203/shoris/releases/download/v0.1.6/shoris_0.1.6_Linux_x86_64.tar.gz"
-      sha256 "9e8a9babf1731c79c3fc47b1e1f826e1c81c92c05eb3579cd48ae7261534ce0a"
+      url "https://github.com/borischen0203/shoris/releases/download/v0.1.7/shoris_0.1.7_Linux_x86_64.tar.gz"
+      sha256 "2f4fe5a95ca74a2668cdace49fd7d3ba56ce7feccbc5ff3a721bea394db427ab"
 
       def install
         bin.install "shoris"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/borischen0203/shoris/releases/download/v0.1.6/shoris_0.1.6_Linux_arm64.tar.gz"
-      sha256 "b681ef6f320faf44ec1ff01387eb04107565d9e6280791b38c732f2c90be4f8f"
+      url "https://github.com/borischen0203/shoris/releases/download/v0.1.7/shoris_0.1.7_Linux_arm64.tar.gz"
+      sha256 "72df7ce52aef8d214238d4605cd5de35854bd897f8da9e7e1736e8c31019fcc1"
 
       def install
         bin.install "shoris"
