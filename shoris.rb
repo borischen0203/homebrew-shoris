@@ -5,20 +5,20 @@
 class Shoris < Formula
   desc ""
   homepage "https://github.com/borischen0203/homebrew-shoris"
-  version "0.1.8"
+  version "0.1.9"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/borischen0203/shoris/releases/download/v0.1.8/shoris_0.1.8_Darwin_x86_64.tar.gz"
-      sha256 "579d2c9781c3bd015381718c25d57a06fc96e2037d81b37a479c325c559c947d"
+      url "https://github.com/borischen0203/shoris/releases/download/v0.1.9/shoris_0.1.9_Darwin_x86_64.tar.gz"
+      sha256 "0e1bd97d8a32fedbaa3c12f71967507b53098c51a072eed96afb241485c3c7d8"
 
       def install
         bin.install "shoris"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/borischen0203/shoris/releases/download/v0.1.8/shoris_0.1.8_Darwin_arm64.tar.gz"
-      sha256 "38aebc664220cb3d9738011d20fbe1d184227e9bb9dc98a212cd99d31830e8f4"
+      url "https://github.com/borischen0203/shoris/releases/download/v0.1.9/shoris_0.1.9_Darwin_arm64.tar.gz"
+      sha256 "813ee4e5ada9b1b614a4cbf65ec7687eff7c223d77317889ca3b7ae922421636"
 
       def install
         bin.install "shoris"
@@ -28,16 +28,16 @@ class Shoris < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/borischen0203/shoris/releases/download/v0.1.8/shoris_0.1.8_Linux_x86_64.tar.gz"
-      sha256 "a85f5675b16026569e4ea2565eb1d7846e6ba016f54b01e6ac5bb495a0b776b2"
+      url "https://github.com/borischen0203/shoris/releases/download/v0.1.9/shoris_0.1.9_Linux_x86_64.tar.gz"
+      sha256 "f3cccbe5d72f97ddee2f0b46cedbe80c3c6646d09eef0b68dee5211340a3eae3"
 
       def install
         bin.install "shoris"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/borischen0203/shoris/releases/download/v0.1.8/shoris_0.1.8_Linux_arm64.tar.gz"
-      sha256 "fe0f618555631e3775dd1e5b4f1365393248ce2f2079d79b50c53f34b3f36829"
+      url "https://github.com/borischen0203/shoris/releases/download/v0.1.9/shoris_0.1.9_Linux_arm64.tar.gz"
+      sha256 "2fb24ed752f2b816d6077f21520ed8ae810bb740716dd1b3aebfedf4cc515a49"
 
       def install
         bin.install "shoris"
