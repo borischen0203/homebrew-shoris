@@ -5,39 +5,29 @@
 class Shoris < Formula
   desc ""
   homepage "https://github.com/borischen0203/shoris"
-  version "1.0.0"
+  version "1.0.1"
 
   on_macos do
-    if Hardware::CPU.intel?
-      url "https://github.com/borischen0203/shoris/releases/download/v1.0.0/shoris_1.0.0_Darwin_x86_64.tar.gz"
-      sha256 "cfd35ed3edf610d733b3c694e4e61931c578f14d1171e177644bf1e9bbce30c6"
+    url "https://github.com/borischen0203/shoris/releases/download/v1.0.1/shoris_1.0.1_Darwin_all.tar.gz"
+    sha256 "7f585b71618064192a7745961568788a975bbfce07ec68ee6bd81a108760cf95"
 
-      def install
-        bin.install "shoris"
-      end
-    end
-    if Hardware::CPU.arm?
-      url "https://github.com/borischen0203/shoris/releases/download/v1.0.0/shoris_1.0.0_Darwin_arm64.tar.gz"
-      sha256 "d05ce6f67122b77d26b16da56e57300d51ec8ffd398ad61f828e6750a503c6be"
-
-      def install
-        bin.install "shoris"
-      end
+    def install
+      bin.install "shoris"
     end
   end
 
   on_linux do
-    if Hardware::CPU.intel?
-      url "https://github.com/borischen0203/shoris/releases/download/v1.0.0/shoris_1.0.0_Linux_x86_64.tar.gz"
-      sha256 "12d2a780e8f2dc552b37cb9fcc30be9ff8c3b4d1a86d49c452b85ebe5a52e1fa"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/borischen0203/shoris/releases/download/v1.0.1/shoris_1.0.1_Linux_arm64.tar.gz"
+      sha256 "2ce7f1cce517d24ced87729ce9257bc4eb56636807c33779ce9d5325feb44377"
 
       def install
         bin.install "shoris"
       end
     end
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/borischen0203/shoris/releases/download/v1.0.0/shoris_1.0.0_Linux_arm64.tar.gz"
-      sha256 "4e8b2078ae54174a8bcd1d1197030433d615a4f8843bc999c4528855834e0f48"
+    if Hardware::CPU.intel?
+      url "https://github.com/borischen0203/shoris/releases/download/v1.0.1/shoris_1.0.1_Linux_x86_64.tar.gz"
+      sha256 "9a999067f8b2e987ca3b8839b55a506d4fe9d6fc3349534a24644d2e37518daa"
 
       def install
         bin.install "shoris"
