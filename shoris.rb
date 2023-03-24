@@ -5,11 +5,11 @@
 class Shoris < Formula
   desc ""
   homepage "https://github.com/borischen0203/shoris"
-  version "1.0.2"
+  version "1.1.0"
 
   on_macos do
-    url "https://github.com/borischen0203/shoris/releases/download/v1.0.2/shoris_1.0.2_Darwin_all.tar.gz"
-    sha256 "f96ad1f077d2768a2dfde9d896f5e99bee953dadae918d17243de0dc344cf492"
+    url "https://github.com/borischen0203/shoris/releases/download/v1.1.0/shoris_1.1.0_Darwin_all.tar.gz"
+    sha256 "efe23c75c6d73b8ded613bc5a1025c093fbf858eb549fd38219acac32f77ad4f"
 
     def install
       bin.install "shoris"
@@ -18,16 +18,16 @@ class Shoris < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/borischen0203/shoris/releases/download/v1.0.2/shoris_1.0.2_Linux_x86_64.tar.gz"
-      sha256 "85b3d9e09fc1c333c5719cfe1c09e95b26a4988cbce3ae77dd40d0592f44d313"
+      url "https://github.com/borischen0203/shoris/releases/download/v1.1.0/shoris_1.1.0_Linux_x86_64.tar.gz"
+      sha256 "0e91291a75aa086412465bec6eb65716d5b0de4c7794ef74349542da1b0034d9"
 
       def install
         bin.install "shoris"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/borischen0203/shoris/releases/download/v1.0.2/shoris_1.0.2_Linux_arm64.tar.gz"
-      sha256 "9ed9f118b054a9ea03d236c034d54275631d549713b7ea963000624e9260f162"
+      url "https://github.com/borischen0203/shoris/releases/download/v1.1.0/shoris_1.1.0_Linux_arm64.tar.gz"
+      sha256 "51430e5d89085235c6400b2bed17ca3d89f419aa760d7cee2513713e4e8456b4"
 
       def install
         bin.install "shoris"
